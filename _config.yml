@@ -7,10 +7,11 @@ tagline:          'A Health IT Ontology'
 description:      'A Health IT Ontology for systematically describing application systems and software products in health IT. By <a href="https://imise.uni-leipzig.de/" target="_blank">IMISE</a> and <a href="https://umit.at/" target="_blank">UMIT</a>.'
 url:              https://hitontology.github.io/
 baseurl:          /hitontology.eu/
+logo:
 
 author:
-  name:           'Konrad Höffner'
-  url:            https://github.com/KonradHoeffner
+  name:           'Konrad Höffner & Thomas Pause'
+  url:            https://github.com/KonradHoeffner , https://github.com/ThomasPause
 
 # Custom vars
 version:          0.0.1
@@ -23,5 +24,6 @@ socialmedia:
 
 internal:
   owncloud:  https://denethor.imise.uni-leipzig.de/index.php/apps/files?dir=/Shared/HITO/
+  slack:     https://hito-project.slack.com/
 
 plugins:
