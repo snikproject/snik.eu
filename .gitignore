@@ -42,3 +42,4 @@ node_modules
 
 # Jekyll
 .jekyll-metadata
+.jekyll-cache/
