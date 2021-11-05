@@ -5,10 +5,9 @@ order: 5
 ---
 
 <p class="lead">{{ site.description }}</p>
-
 ---
+<!--
 ## Search
-<!--  -->
 <div class="flexy">
 <div class="flex-item">
   <a title="Faceted Search" href="https://hitontology.eu/search/">Search for <br> evaluation <br> studies
@@ -23,33 +22,31 @@ order: 5
 </div>
 </div>
 <br>
-
+-->
 ---
-## Other results
+## Results
 
 <div class="flexy">
 <div class="flex-item">
-  <a title="Browse" href="https://hitontology.eu/ontology/">Browse
+  <a title="Browse" href="https://www.snik.eu/ontology/">Browse
   <img title="Browse" alt="Browse" src="public/browse.png">
 </a>
 </div>
+
 <div class="flex-item">
-<a title="Feature-Catalogues" href="https://hitontology.eu/ontology/FeatureCatalogue">Feature-Catalogues
-<img title="Feature-Catalogues" alt="Feature-Catalogues" src="public/catalogue.jpg">
-</a>
-</div>
-<div class="flex-item">
-<a title="Function-Catalogues" href="https://hitontology.eu/ontology/EnterpriseFunctionCatalogue">Function-Catalogues
-<img title="Function-Catalogues" alt="Function-Catalogues" src="public/catalogue.jpg">
-</a>
-</div>
-<div class="flex-item">
-  <a title="Query" href= "https://hitontology.eu/sparql/">Query
+  <a title="Query" href= "https://www.snik.eu/sparql/">Query
   <img title="Query" alt="Query" src="public/sparql.png">
 </a>
 </div>
+
 <div class="flex-item">
-<a title="Download" href="https://raw.githubusercontent.com/hitontology/ontology/master/hito.ttl">Download <br>
+  <a title="Browse" href="https://www.snik.eu/graph/">Graph Visualization
+  <img title="Browse" alt="Browse" src="public/browse.png">
+</a>
+</div>
+
+<div class="flex-item">
+<a title="Download" href="https://github.com/snikproject/ontology/archive/refs/heads/master.zip">Download RDF<br>
 <img title="Download" alt="Download" src="public/download.png">
 </a>
 </div>
@@ -61,10 +58,10 @@ order: 5
 
 ---
 <center>
-  <a href="public/HITontology_V1V2_2021-06-21.svg" target="_blank">
-    <img src="public/HITontology_V1V2_2021-06-21.svg">
+  <a href="public/SNIK_Metamodell_V8.svg" target="_blank">
+    <img src="public/SNIK_Metamodell_V8.svg">
   </a>
-  The HITO-Diagram
+  The SNIK Meta Model
 </center>
 ---
-<center><img src="public/hito-graph.png">The HITO-Graph</center>
+<!--<center><img src="public/hito-graph.png">The HITO-Graph</center>-->

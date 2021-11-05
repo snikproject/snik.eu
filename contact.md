@@ -16,14 +16,14 @@ permanent professor<br>
 <a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
 </div>
 
-<img src="public/ammenwerth.jpg">
+<img src="public/paech.jpg">
 <div class="inbox">
-<a href="{{ site.links.ammenwerth }}">Elske Ammenwerth</a><br>
-Hall in Tirol, Austria<br>
+<a href="{{ site.links.paech}}">Barbara Paech</a><br>
+Heidelberg, Germany<br>
 permanent professor<br>
 </div>
 <div class="inbox">
-<a href="{{ site.links.umit }}"><img src="public/umit-logo.svg"></a>
+<a href="{{ site.links.heidelberg }}"><img src="public/heidelberg-logo.svg"></a>
 </div>
 </div>
 <!--  -->
@@ -59,34 +59,14 @@ Ontologist<br>
 <a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
 </div>
 
-<img src="public/ghalandari.jpg">
+<!--<img src="public/.jpg">-->
 <div class="inbox">
-<a href="{{ site.links.ghalandari }}">Maryam Ghalandari</a><br>
+<a href="{{ site.links.kuecherer }}">Christian Kücherer</a><br>
 Leipzig, Germany<br>
-Researcher<br>
+Webmaster, Programmer<br>
 </div>
 <div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
-</div>
-
-<img src="public/dornauer.jpg">
-<div class="inbox">
-<a href="{{ site.links.dornauer }}">Verena Dornauer</a><br>
-Hall in Tirol, Austria<br>
-Ontologist<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.umit }}"><img src="public/umit-logo.svg"></a>
-</div>
-
-<img src="public/hito.svg">
-<div class="inbox">
-<a href="{{ site.links.bindel }}">Michelle Bindel</a><br>
-Leipzig, Germany<br>
-Research Assitant<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
+<a href="{{ site.links.heidelberg}}"><img src="public/heidelberg-logo.svg"></a>
 </div>
 
 <img src="public/pause.jpg">
@@ -98,13 +78,13 @@ Webmaster, Programmer<br>
 <div class="inbox">
 <a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
 </div>
-
+<!-- MS, ST, CK-->
 </div>
 
 ## Webmaster
 
-Thomas Pause and Konrad Höffner<br>
-Please report website issues at the <a href="https://github.com/hitontology/hitontology.eu/issues" target="_blank">GitHub Issue Tracker</a>.
+Konrad Höffner<br>
+Please report website issues at the <a href="https://github.com/snikproject/snik.eu/issues" target="_blank">GitHub Issue Tracker</a>.
 
 ## Address
 
