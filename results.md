@@ -35,18 +35,19 @@ Abbildung 3: Die Visualisierung der Ontologie
 Die CIO Umfrage hat zum Ziel die Situation der IT-LeiterInnen des Informationsmanagements im Krankenhaus näher zu beleuchten.
 Dazu wurden 1284 IT-Leiterinnen per E-Mail kontaktiert, von denen 164 die Fragebögen beantwortet haben wurde (Rücklaufquote 12,8 %).
 Neben den Charakteristika der Krankenhäusern, IT-Abteilungen und den IT-LeiterInnen, wurden die Kommunikation mit der Geschäftsführung, die Aufgaben des Informationsmanagements, und die Anwendungssysteme für Aufgaben des Informationsmanagement im Detail erfasst und ausgewertet.
-Siehe auch: <a href="">The Status Quo of Information Management in Hospitals – Results of an Online Survey</a>
+Siehe auch: <a href="http://subs.emis.de/LNI/Proceedings/Proceedings259/685.pdf">The Status Quo of Information Management in Hospitals – Results of an Online Survey</a>
 
 ## Umfragereport
 
-Im Umfragereport "Charakteristika von IT-Abteilungen in Krankenhäusern in Deutschland" wird der Status quo und der Stellenwert des Informationsmanagements in Krankenhäusern zum Umfragezeitpunkt im Jahr 2016 dargestellt.
+Im Umfragereport <a href="public/umfragereport.pdf">"Charakteristika von IT-Abteilungen in Krankenhäusern in Deutschland"</a> wird der Status quo und der Stellenwert des Informationsmanagements in Krankenhäusern zum Umfragezeitpunkt im Jahr 2016 dargestellt.
 Es wurde unter anderem überprüft, inwieweit die in SNIK modellierten Aufgaben des strategischen, taktischen und operativen Informationsmanagements tatsächlich im Informationsmanagement von Krankenhäusern eine Rolle spielen.
-Systemanalyse
+
+## Systemanalyse
 
 Die Systemanalyse wurde mit dem Ziel die Ist-Situation des Informationsmanagements zweiter deutscher Krankenhäuser zu erfassen durchgeführt.
 Neben einer detaillierten Beschreibung der bestehenden Aufgaben der Informationsmanagement-Abteilung wurden die dabei verwendeten Informationsobjekte und Anwendungssysteme als 3LGM2 Modelle beschrieben.
 Die Systemanalyse zeigt große Unterschiede in der Ausprägung der IM-Aufgaben und eingesetzten Werkzeuge.
-Siehe auch: <a href="">System Analysis of Information Management</a>
+Siehe auch: <a href="http://subs.emis.de/LNI/Proceedings/Proceedings246/783.pdf">System Analysis of Information Management</a>
 
 ## DsTORE
 
@@ -54,7 +55,6 @@ Zur Spezifikation des persönlichen entscheidungsuntertützenden System CIO-Navi
 DsTORE kombiniert die Vorteile von TORE mit der Spezifikation von Entscheidungsaufgaben.
 Die Vorteile von TORE sind die Erfassung und damit einhergehend das Verständnis von NutzerInnen-Aufgaben, die Unterstützung von UI-Prototypen und die explizite Berücksichtigung der Anwendungsdomäne und NutzerInnen-Interaktionen.
 DsTORE (vgl. Abbildung 4) erweitert TORE um die Klassifikation von Aufgaben hinsichtlich deren Entscheidungscharakter, die Berücksichtigung von entscheidungsspezifischen Datenstrukturen, die Verknüpfung von Entscheidungen mit den notwendigen Daten, und die explizite Dokumentation unterschiedlicher Datenquellen, deren Ort und Format.
-DsTORE
 <img src="public/DsTORE.png">
 Abbildung 4: Entscheidungspunkte von DsTORE für die Spezifikation entscheidungsunterstützender Systeme
 
@@ -70,6 +70,7 @@ TOREOnto ermöglicht die Instanziierung der RE-Methode TORE unter der Anwendung 
 Ist ein entscheidungsuntersützendes System, das IT-LeiterInnen beim Treffen von zuvor definierten Entscheidungen im Informationsmanagement unterstützt.
 Der CIO Navigator (CIONx), wie in Abbildung 5 dargestellt, integriert Daten aus unterschiedlichen Quellen, um den individuellen Informationsbedarf der IT-LeiterInnen für zuvor definierte Entscheidungen übersichtlich darstellt.
 Screenshot des implementierten Systemprototyp CIONx für die Entscheidungsaufgaben Multiprojektmanagement und Changemanagement
+<img src="public/pwl_bereichsbudget.png">
 Abbildung 5: Screenshot des implementierten Systemprototyp CIONx für die Entscheidungsaufgaben Multiprojektmanagement und Changemanagement
 
 ## CIONo
@@ -80,6 +81,7 @@ Klassen und Relationen der Ontologien können mit Daten hinterlegt werden, wodur
 Beispielsweise können so Frage beantwortet werden, wie „welche MitarbeiterIn arbeitet an welchem Projekt mit wodurch welches IT-Ziel erfüllt wird?“.
 Als Erweiterung können die Klassen der Ontologie mit realen Daten verknüpft werden und über Mechanismen des Ontologie-basierten Datenzugriff (ontology based data access, OBDA) verwendet werden.
 Screenshot des Ontologie-basierten CIO Navigators CIONo
+<img src="public/CIONo-Screenshot.png">
 Abbildung 6: Screenshot des Ontologie-basierten CIO Navigators CIONo
 
 <!--
