@@ -20,17 +20,16 @@ github:
   org:           https://github.com/snikproject
 
 internal:
-  owncloud:  https://denethor.imise.uni-leipzig.de/index.php/apps/files?dir=/Shared/HITO/
+  owncloud:  https://denethor.imise.uni-leipzig.de/index.php/apps/files?dir=/Shared/SNIK/
   slack:     https://hito-project.slack.com/
   googledrive: https://drive.google.com/drive/folders/1vvBFwDhE9S1Mm3i317KjubNdLsW1iCJU
   qualitycheck: qualitycheck
   conductor: https://www.snik.eu/conductor
-  form: https://hitontology.github.io/instancegenerator/
 
 # link targets hosted externally, absolute URLs required
 snik:
-  ontology: https://hitontology.eu/ontology/
-  graph: https://hitontology.eu/search/
+  ontology: https://www.snik.eu/ontology/
+  graph: https://www.snik.eu/graph
 
 links:
   imise:     https://imise.uni-leipzig.de/
@@ -42,8 +41,8 @@ links:
   schneider:  http://www.imise.uni-leipzig.de/Mitarbeiter/Birgit_Schneider
   ghalandari: http://www.imise.uni-leipzig.de/Mitarbeiter/Maryam_Ghalandari
   dornauer:   https://www.umit.at/page.cfm?vpath=departments/technik/iig/
-  bindel:     https://github.com/MichelleBindel/
   pause:      http://www.imise.uni-leipzig.de/Mitarbeiter/Thomas_Pause
+  kuecherer:  https://orcid.org/0000-0001-5608-482X
 
 relative_links:
   enabled:     true

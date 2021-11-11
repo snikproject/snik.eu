@@ -1,95 +1,94 @@
 ---
 layout: page
-title: Contact
+title: Projektteam
 order: 80
 ---
-<img src="public/team.jpg" style="max-width:90%;margin:0 auto;">
-## Project Leaders
+## Projektleitung
+
 <div class="teamGrid">
-<img src="public/winter.jpg">
+
 <div class="inbox">
-<a href="{{ site.links.winter}}">Alfred Winter</a><br>
-Leipzig, Germany<br>
-permanent professor<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
+<p>
+<a href="{{ site.links.winter}}">Prof. Dr. Alfred Winter</a><br>
+Tel.: +49 3419716107<br>
+Fax: +49 3419716109<br>
+E-Mail: <a href="mailto:alfred.winter@imise.uni-leipzig.de">alfred.winter@imise.uni-leipzig.de</a>
+</p>
+<p>
+Postanschrift:<br>
+Prof. Dr. Alfred Winter<br>
+Universität Leipzig<br>
+Institut für Medizinische Informatik, Statistik und Epidemiologie<br>
+Härtelstraße 16-18<br>
+04107 Leipzig
+</p>
 </div>
 
-<img src="public/paech.jpg">
 <div class="inbox">
-<a href="{{ site.links.paech}}">Barbara Paech</a><br>
-Heidelberg, Germany<br>
-permanent professor<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.heidelberg }}"><img src="public/heidelberg-logo.svg"></a>
+<p>
+<a href="{{ site.links.paech}}">Prof. Dr. Barbara Paech</a><br>
+Tel.: +49 6221545810<br>
+Fax: +49 6221545813<br>
+E-Mail: <a href="mailto:paech@informatik.uni-heidelberg.de">paech@informatik.uni-heidelberg.de</a><br>
+</p>
+<p>
+Postanschrift:<br>
+Prof. Dr. Barbara Paech<br>
+Universität Heidelberg<br>
+Institut für Informatik, Lehrstuhl Software Engineering<br>
+Im Neuenheimer Feld 326<br>
+69120 Heidelberg
+</p>
 </div>
 </div>
 <!--  -->
-## Project Team
-<div class="teamGrid">
-<img src="public/hoeffner.jpg">
-<div class="inbox">
-<a href="{{ site.links.hoeffner}}">Konrad Höffner</a><br>
-Leipzig, Germany<br>
-Webmaster, Ontologist, Programmer<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
-</div>
 
-<img src="public/jahn.jpg">
-<div class="inbox">
+## Projektkoordination
+
+<p>
 <a href="{{ site.links.jahn }}">Franziska Jahn</a><br>
-Leipzig, Germany<br>
-Project Coordinator<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
-</div>
+Tel.: +49 341 97 16194<br>
+Fax: +49 341 97 16109<br>
+E-Mail: <a href="mailto:franziska.jahn@imise.uni-leipzig.de">franziska.jahn@imise.uni-leipzig.de</a>
+</p>
+<p>
+Postanschrift:<br>
+Franziska Jahn<br>
+Universität Leipzig<br>
+Institut für Medizinische Informatik, Statistik und Epidemiologie<br>
+Härtelstraße 16-18<br>
+04107 Leipzig
+</p>
 
-<img src="public/schneider.jpg">
-<div class="inbox">
-<a href="{{ site.links.schneider }}">Birgit Schneider</a><br>
-Leipzig, Germany<br>
-Ontologist<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
-</div>
+## Wissenschaftliche Mitarbeiter
 
-<!--<img src="public/.jpg">-->
-<div class="inbox">
-<a href="{{ site.links.kuecherer }}">Christian Kücherer</a><br>
-Leipzig, Germany<br>
-Webmaster, Programmer<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.heidelberg}}"><img src="public/heidelberg-logo.svg"></a>
-</div>
+* <a href="{{ site.links.schneider }}">Dr. Birgit Schneider</a>
+* <a href="{{ site.links.kuecherer }}">Prof. Dr. Christian Kücherer</a>
+* <a href="{{ site.links.hoeffner}}">Dr. Konrad Höffner</a>
 
-<img src="public/pause.jpg">
-<div class="inbox">
-<a href="{{ site.links.pause }}">Thomas Pause</a><br>
-Leipzig, Germany<br>
-Webmaster, Programmer<br>
-</div>
-<div class="inbox">
-<a href="{{ site.links.imise }}"><img src="public/imise-logo.svg"></a>
-</div>
-<!-- MS, ST, CK-->
-</div>
+## SHK
+* <a href="{{ site.links.pause }}">Thomas Pause</a>
+
+## Ehemalige Mitarbeiter
+
+* Michael Schaaf
+* Anatoli Zeiser
+* Martin Schöbel
+* Kais Tahar
+* Lydia Lotzmann
+* Iman Gharib
+* Christian Kahmann
+
+ 
+## Kooperationspartner
+
+* IMISE der Universität Leipzig
+* Lehrstuhl für Software Engineering der Universität Heidelberg
+* Prof. Dr. Heinrich Herre
+* Universitätsklinikum Leipzig
 
 ## Webmaster
 
 Konrad Höffner<br>
 Please report website issues at the <a href="https://github.com/snikproject/snik.eu/issues" target="_blank">GitHub Issue Tracker</a>.
 
-## Address
-
-Institut für Medizinische Informatik, Statistik und Epidemiologie<br>
-Leipzig University<br>
-Härtelstraße 16-18<br>
-04107 LEIPZIG<br>
-GERMANY
