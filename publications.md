@@ -1,9 +1,68 @@
 ---
 layout: page
-title: Publications
+title: Publikationen
 order: 31
 ---
+
+## 2019
+
+**Jahn F, Kücherer C, Liebe J-D, Paech B, Winter A**
+Charakteristika von IT-Abteilungen in Krankenhäusern in Deutschland. Report zur Umfrage unter IT-Leitern in Krankenhäusern (Februar-April 2016).
+
+**Jahn F, Höffner K, Schneider B, Lörke A, Pause T, Ammenwerth E, Winter A**
+The SNIK Graph: Visualization of a Medical Informatics Ontology MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019.
+Best poster award.
+
+**Höffner K, Jahn F, Lörke A, Pause T, Schneider B, Ammenwerth E, Winter A**
+Open and Linkable Knowledge about Management of Health Information Systems.
+MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019, Poster.
+
+## 2017
+**Höffner K, Jahn F, Kücherer C, Paech B, Schneider B, Schöbel M, Stäubert S, Winter A**
+Technical Environment for Developing the SNIK Ontology of Information Management in Hospitals.
+Stud Health Technol Inform. 2017;243:122-126.
+
+**Kücherer, C**
+Use of Domain Ontologies to Improve Requirements Quality
+23nd International Working Conference on Requirements Engineering: Foundation for Software Quality (REFSQ'17), Doctoral Symposium, Essen (Germany), February 27 - March 2, 2017, CEUR Workshop Proceedings 1796, CEUR-WS.org 2017
+
+**Kücherer, C, Paech, B**
+A Task-oriented Requirements Engineering Method for Personal Decision Support Systems – A Case Study
+19th International Conference on Enterprise Information Systems (ICEIS 2017), Porto (Portugal), April 26-29, 2017, SCITEPRESS 2017
+
+**Liebe J D, Thomas O, Jahn F, Kücherer C, Esdar M, Weiß J P, Hüsers J, Hübner U**
+Zwischen Schattendasein, Governance und Entrepreneurship – Eine empirische Bestandsaufnahme zum Professionalisierungsgrad des IT-Managements in deutschen Krankenhäusern
+13th International Conference on Wirtschaftsinformatik (WI 2017), St. Gallen (Switzerland), February 12-15, 2017, accepted to appear
+
+## 2016
+**Kücherer C, Liebe J D, Schaaf M, Thye J, Paech B, Winter A and Jahn F.**
+The Status Quo of Information Management in Hospitals - Results of an Online Survey. In: H.C. Mayr, M. Pinzger (Hrsg.), INFORMATIK 2016, Lecture Notes in Informatics (LNI), Gesellschaft für Informatik, Bonn 2016.
+
+**Jahn F, Schaaf M, Kahmann C, Tahar K, Kücherer C, Paech B, Winter A.**
+An ontology-based scenario for teaching the management of health information systems. HEC2016 München. Stud Health Technol Inform. 2016;228:359-63.
+
+**Tahar K, Schaaf M, Jahn F, Kücherer C, Paech B, Herre H, Winter A.**
+An approach to support collaborative ontology construction. HEC2016 München. Stud Health Technol Inform. 2016;228:369-73.
+
+**Schaaf M, Jahn F, Tahar K, Kücherer C, Winter A, Paech B.**
+The visualization of large ontologies from a tool point of view. HEC2016 München. Stud Health Technol Inform. 2016;228:349-53.
+
+## 2015
+**Kücherer C, Jung M, Jahn F, Schaaf M, Tahar K, Paech B, Winter A.**
+System Analysis of Information Management. In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), GI-Jahrestagung 2015: 783-796.
+
+**Schaaf M, Jahn F, Tahar K, Kücherer C, Winter A, Paech B.**
+Entwicklung und Einsatz einer Domänenontologie des Informationsmanagements im Krankenhaus. In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), INFORMATIK 2015. GI-Jahrestagung 2015:753-765
+
+## 2014
+**Jahn F, Schaaf M, Paech B, Winter A.**
+Ein semantisches Netz des Informationsmanagements im Krankenhaus. Lecture Notes in Informatics (LNI) – Proceedings, Volume P-232, 1491-1498.
+
+**Tahar K, Jahn F, Schaaf M, Kücherer C, Paech B, Winter A.**
+Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen. Leipzig Research Festival for Life Sciences 2014, Universität Leipzig 2014, S. 45.
+
 <!-- use css for superduper collapsibles -->
+<!--
 <link rel="stylesheet" href="public/css/collapse.css">
 ## Papers
 
@@ -145,7 +204,6 @@ Amsterdam: IOS Press. pp. 1419-20.
   </div>
 </div>
 
-<!-- Script for superduper collapsibles -->
 <script>
 let myLabels = document.querySelectorAll('.lbl-toggle');
 
@@ -200,3 +258,4 @@ An ontology for precise descriptions of medical free/libre open source software 
 The website medfloss.org provides a platform for retrieving medical FLOSS projects. Currently, it lists 361 projects that are described by certain characteristics like application type, license, and enterprise functions supported. The vocabulary used to describe the FLOSS projects does not describe the functionalities of FLOSS projects sufficiently in many cases. An ontology enabling systematic descriptions of medical software could help developers to clearly specify the software’s functionalities and make FLOSS projects on medfloss.org even better retrievable and comparable.
 
 HITO, the health IT ontology, is developed by an Austrian-German research team in order to support systematic descriptions of medical software. HITO integrates different existing taxonomies (e.g. parts of SNOMED CT, WHO classification of digital interventions) and software characteristics found in literature. To describe FLOSS projects on medfloss.org using HITO, the support of the FLOSS community is needed.
+-->
