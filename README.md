@@ -1,6 +1,8 @@
-# hitontology.eu
+<img align="right" width="200" height="200" src="https://avatars.githubusercontent.com/u/79194034?s=400&u=6f1a8e449234d0daa440de87a64f718a9c804593&v=4" alt="SNIK">
 
-This is the website for HITO – A Health IT Ontology for systematically describing application systems and software products in health IT.
+# SNIK Website
+
+Live on <https://www.snik.eu>.
 It is a fork of the original Hyde layout that used to be a theme for Jekyll but is now standalone.
 You can find the original Hyde layout readme below to see how to edit the page in the master branch.
 <!--  -->
