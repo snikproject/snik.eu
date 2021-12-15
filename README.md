@@ -3,172 +3,93 @@
 # SNIK Website
 
 Live on <https://www.snik.eu>.
-It is a fork of the original Hyde layout that used to be a theme for Jekyll but is now standalone.
-You can find the original Hyde layout readme below to see how to edit the page in the master branch.
-<!--  -->
+This is the website for SNIK, the Semantic Network of Information Management in Hospitals.
+It is a copy of the [HITO website](https://github.com/hitontology/hitontology.eu), which is a fork of the [Hyde layout](https://github.com/poole/hyde), which itself is based on Jekyll, a static site generator.
+
 ## Setup
+
 1. Install Ruby
-2. Install Jekyll
+2. Install Bundler
+3. Use Bundler to install the dependencies
 
 ### Example for Arch Linux
 
-    sudo pacman -S ruby
-    gem install jekyll bundler webrick
-    bundle install
+    $ sudo pacman -S ruby
 
-Set `PATH=$PATH:$(ruby -e 'puts Gem.user_dir')/bin` in your environment configuration file, such as `.profile` or `.zshrc`.
+Add the following to your environment configuration file, such as `.profile` or `.zshrc` and reload (`source ~/.zshrc`) it:
+
+    export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+    export PATH="$PATH:$GEM_HOME/bin"
+
+Use bundler with the provided Gemfile:
+
+    $ gem install bundler
+    $ bundle install
+
+However that resulted in the error `Bundler::GemNotFound: Could not find jekyll-4.2.1.gem for installation` in testing on one machine.
 
 ### Example for MacOS (with Homebrew)
 
 Install Ruby:
 
-    brew install ruby
+    $ brew install ruby
 
-Add the brew ruby path to your shell configuration:
-If you're using Zsh:
+Add the brew ruby path to your shell configuration.
+If you're using Zsh, add the following lines to `~/.zshrc`
 
-    echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+    export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+    export PATH="$PATH:$GEM_HOME/bin"
 
-Install the bundler and jekyll gems:
+Install bundler and the gems:
 
-    gem install --user-install bundler jekyll webrick
+    $ gem install --user-install bundler
+    $ bundle install
 
-Install wget:
+## Preview
+Switch to the `master` branch and run `bundle exec jekyll serve --incremental`.
+Check if everything looks normal.
 
-    brew install wget
+## Build
+The GitHub workflow in `.github/workflows/deploy.yml` automatically builds the master branch and deploys it on the static branch.
+To build locally, run `bundle exec jekyll build (--incremental)`, 
+This will put the static HTML content into the `_site` folder.
 
-## Publish
-Switch to the `master` branch and run `jekyll serve` or execute `./run`.
-Check if everyone looks normal.
+### Deploy
+We serve the content of the static branch at the official SNIK website <https://snik.eu>.
+The static branch is also automatically served using GitHub pages at <https://.github.io/snik.eu/>.
 
-### Old manual method
-Then, on the same machine, checkout the `static` branch and execute the  `./update` script, which uses wget to get a static copy.
-For ease of use, we recommend to keep two copies of the repository, one for the master branch and one for the static branch.
-Then git commit and push the static branch.
+### Using Docker
+If you cannot or do not want to install Ruby and the gems on your system, or there is some problem with Ruby, you can also use the Dockerfile, which should work everywhere.
+Use the following commands or execute the associated script.
 
-### New automatic method
-The GitHub workflow in `.github/workflows/deploy.yml` automatically deploys it on the static branch.
+| goal         | command                                                                   | script                     |
+|--------------|---------------------------------------------------------------------------|----------------------------|
+| build image  | docker build -t snik.eu .                                          | scripts/docker-build       |
+| preview page | docker run --rm --network="host" snik.eu                           | scripts/docker-run-preview |
+| build page   | docker run --rm -it --volume="$PWD:/usr/src/app" -it snik.eu build | scripts/docker-run-build   |
 
-### Update on the server
-Finally, go to the bruchtal server and run `git pull` in `/var/www/html/hitontology.eu.`
+## Integration of the Faceted Search
+If you publish it for the first time, go into the `snik.eu` directory and perform `git clone git@github.com:hitontology/facetedbrowsing.git search`. Then follow the installation instructions for the search.
 
-If you publish it for the first time, go into the `hitontology.eu` directory and perform `git clone git@github.com:hitontology/facetedbrowsing.git search`. Then follow the installation instructions for the search.
+## Troubleshooting
 
-# Original Hyde Layout
+### Ruby cannot find the native extensions
 
-Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+#### Exemplary error message
 
-![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
+   bundler: failed to load command: jekyll (/home/konrad/.local/share/gem/ruby/3.0.0/bin/jekyll)
+   /home/konrad/.local/share/gem/ruby/3.0.0/gems/ffi-1.15.1/lib/ffi.rb:5:in `require': libffi.so.7: cannot open shared object file: No such file or directory - /home/konrad/.local/share/gem/ruby/3.0.0/extensions/x86_64-linux/3.0.0/ffi-1.15.1/ffi_c.so (LoadError)
 
+This can happen if you already built the native extensions (e.g. via `bundle install`) with an older version of Ruby and then upgrade Ruby.
+Even `bundle install` will not rebuild the native extensions in that case if they are already present.
+To fix this, run `bundle pristine`.
+It is also possible that you installed some dependencies using `gem install` system- or user-wide, which bundler will not overwrite by default.
+In this case, even `bundle pristine` may not be enough.
+In our experience, this can be fixed by deinstalling Ruby, deleting all leftover gem directories and reinstalling Ruby afterwards.
 
-## Contents
+### Preview URL not working in MacOS using Docker
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Sticky sidebar content](#sticky-sidebar-content)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
-
-
-## Usage
-
-Hyde is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
-
-
-## Options
-
-Hyde includes some customizable options, typically applied via classes on the `<body>` element.
-
-
-### Sidebar menu
-
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
-
-```
----
-layout: page
-title: About
----
-```
-
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
-
-
-### Sticky sidebar content
-
-By default Hyde ships with a sidebar that affixes it's content to the bottom of the sidebar. You can optionally disable this by removing the `.sidebar-sticky` class from the sidebar's `.container`. Sidebar content will then normally flow from top to bottom.
-
-```html
-<!-- Default sidebar -->
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    ...
-  </div>
-</div>
-
-<!-- Modified sidebar -->
-<div class="sidebar">
-  <div class="container">
-    ...
-  </div>
-</div>
-```
-
-
-### Themes
-
-Hyde ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
-
-![Hyde in red](https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png)
-
-There are eight themes available at this time.
-
-![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
-
-To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
-```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-### Reverse layout
-
-![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png)
-
-Hyde's page orientation can be reversed with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
-
-## Development
-
-Hyde has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+Docker may run in it's own virtual machine under MacOS and not thus not forward `--network="host"` to the network of the machine itself.
+While the default way of port mapping in Docker using the `-p 4000:4000` gets forwarded to the local host under MacOS, this does not work with the underlying Jekyll server of this website.
+Thus, there may not be a way to preview the docker build using `jekyll serve` on MacOS.
+However you can still build it using Docker and use a local webserver to preview the `_site` folder.
