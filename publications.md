@@ -7,31 +7,33 @@ order: 35
 ## 2019
 
 **Jahn F, Kücherer C, Liebe J-D, Paech B, Winter A**
-Charakteristika von IT-Abteilungen in Krankenhäusern in Deutschland. Report zur Umfrage unter IT-Leitern in Krankenhäusern (Februar-April 2016).
+<a href="public/Charakteristika von IT-Abteilungen in Krankenhaeusern in Deutschland.pdf">Charakteristika von IT-Abteilungen in Krankenhäusern in Deutschland.</a>
+Report zur Umfrage unter IT-Leitern in Krankenhäusern (Februar-April 2016).
 
 **Jahn F, Höffner K, Schneider B, Lörke A, Pause T, Ammenwerth E, Winter A**
-The SNIK Graph: Visualization of a Medical Informatics Ontology MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019.
+<a href="public/The SNIK Graph Visualization of a Medical Informatics Ontology.pdf">The SNIK Graph: Visualization of a Medical Informatics Ontology</a>
+MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019.
 Best poster award.
 
 **Höffner K, Jahn F, Lörke A, Pause T, Schneider B, Ammenwerth E, Winter A**
-Open and Linkable Knowledge about Management of Health Information Systems.
+<a href="public/Open and Linkable Knowledge About Management of Health Information Systems.pdf">Open and Linkable Knowledge about Management of Health Information Systems.</a>
 MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019, Poster.
 
 ## 2017
 **Höffner K, Jahn F, Kücherer C, Paech B, Schneider B, Schöbel M, Stäubert S, Winter A**
-Technical Environment for Developing the SNIK Ontology of Information Management in Hospitals.
+<a href="public/Technical Environment for Developing the SNIK Ontology of Information Management in Hospitals.pdf">Technical Environment for Developing the SNIK Ontology of Information Management in Hospitals.</a>
 Stud Health Technol Inform. 2017;243:122-126.
 
 **Kücherer, C**
-Use of Domain Ontologies to Improve Requirements Quality
+<a href="public/Use of Domain Ontologies to Improve Requirements Quality.pdf">Use of Domain Ontologies to Improve Requirements Quality</a>
 23nd International Working Conference on Requirements Engineering: Foundation for Software Quality (REFSQ'17), Doctoral Symposium, Essen (Germany), February 27 - March 2, 2017, CEUR Workshop Proceedings 1796, CEUR-WS.org 2017
 
 **Kücherer, C, Paech, B**
-A Task-oriented Requirements Engineering Method for Personal Decision Support Systems – A Case Study
+<a href="public/A Task-oriented Requirements Engineering Method for Personal Decision Support Systems.pdf">A Task-oriented Requirements Engineering Method for Personal Decision Support Systems – A Case Study</a>
 19th International Conference on Enterprise Information Systems (ICEIS 2017), Porto (Portugal), April 26-29, 2017, SCITEPRESS 2017
 
 **Liebe J D, Thomas O, Jahn F, Kücherer C, Esdar M, Weiß J P, Hüsers J, Hübner U**
-Zwischen Schattendasein, Governance und Entrepreneurship – Eine empirische Bestandsaufnahme zum Professionalisierungsgrad des IT-Managements in deutschen Krankenhäusern
+<a href="public/Zwischen Schattendasein Governance und Entrepreneurship.pdf">Zwischen Schattendasein, Governance und Entrepreneurship – Eine empirische Bestandsaufnahme zum Professionalisierungsgrad des IT-Managements in deutschen Krankenhäusern</a>
 13th International Conference on Wirtschaftsinformatik (WI 2017), St. Gallen (Switzerland), February 12-15, 2017, accepted to appear
 
 ## 2016
