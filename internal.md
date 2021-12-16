@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Internal
-order: 35
+order: 37
 ---
 
 <!--  -->
@@ -16,4 +16,3 @@ order: 35
 * <a href="{{ site.internal.slack }}" target="_blank">Slack Workspace</a>
 
 * <a href="{{ site.internal.conductor }}" target="_blank">Conductor</a>
-

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-order: 5
+order: 1
 ---
 
 <!--<p class="lead">{{ site.description }}</p>-->

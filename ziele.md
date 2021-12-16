@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projektziele
-order: 5
+order: 3
 ---
 
 ## Das Semantische Netz des Informationsmanagements im Krankenhaus (SNIK)
@@ -36,4 +36,3 @@ Der CIO-Navigator kann als Business-Analyse-Werkzeug aufgefasst werden.
 Für den CIO-Navigator soll zunächst ein Nutzungs- und Architekturkonzept entwickelt werden.
 Dabei ist insbesondere der Umgang mit Änderungen in den Daten der integrierten Werkzeuge eine Herausforderung.
 Die Tauglichkeit des CIO-Navigators und des Architekturkonzepts soll schließlich an zwei Krankenhäusern erprobt werden.
-

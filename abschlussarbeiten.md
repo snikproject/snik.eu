@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Abschlussarbeiten
-order: 5
+order: 36
 ---
 
 ## 2020

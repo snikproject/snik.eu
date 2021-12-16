@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hintergrund des Projektes
-order: 10
+order: 2
 ---
 
 ## Stand der Forschung und Praxis
@@ -122,4 +122,3 @@ Ein semantisches Netz des vernetzten IM im Krankenhaus würde Folgendes ermögli
 2. Riempp G, Gieffers-Ankel S. Application portfolio management: a decision-oriented view of enterprise architecture. Information Systems and E-Business Management. 2007;5(4):359-78.
 3. Reichenberger K. Kompendium semantische Netze – Konzept, Technologie, Modellierung. Springer 2010.
 4. Gruber TR. Toward Principles for the Design of Ontologies Used for Knowledge Sharing. International Journal Human-Computer Studies. 1995;43(5-6):907-28.
-
