@@ -17,7 +17,7 @@ Betreut von: Franziska Jahn
 
 ## 2017
 
-**<a href="Faulhaber_Ausarbeitung74103.pdf">Bewertung der Datenqualität der SNIK-Ontologie (Seminararbeit)</a>**<br>
+**<a href="public/Faulhaber_Ausarbeitung74103.pdf">Bewertung der Datenqualität der SNIK-Ontologie (Seminararbeit)</a>**<br>
 Bearbeitet von: Stefan Faulhaber<br>
 Betreut von: Konrad Höffner
 
