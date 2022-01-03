@@ -4,6 +4,8 @@ title: Publikationen
 order: 35
 ---
 
+Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei für LaTeX herunterladen</a>.
+
 ## 2019
 
 **Jahn F, Kücherer C, Liebe J-D, Paech B, Winter A**
