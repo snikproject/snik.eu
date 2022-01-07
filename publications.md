@@ -40,37 +40,37 @@ Stud Health Technol Inform. 2017;243:122-126.
 
 ## 2016
 **Kücherer C, Liebe J D, Schaaf M, Thye J, Paech B, Winter A and Jahn F.**
-<a href="public/The Status Quo of Information Management in Hospitals.pdf>The Status Quo of Information Management in Hospitals - Results of an Online Survey.</a>
+<a href="public/The Status Quo of Information Management in Hospitals.pdf">The Status Quo of Information Management in Hospitals - Results of an Online Survey.</a>
 In: H.C. Mayr, M. Pinzger (Hrsg.), INFORMATIK 2016, Lecture Notes in Informatics (LNI), Gesellschaft für Informatik, Bonn 2016.
 
 **Jahn F, Schaaf M, Kahmann C, Tahar K, Kücherer C, Paech B, Winter A.**
-<a href="public/An Ontology-Based Scenario for Teaching the Management of Health Information Systems.pdf>An ontology-based scenario for teaching the management of health information systems.</a>
+<a href="public/An Ontology-Based Scenario for Teaching the Management of Health Information Systems.pdf">An ontology-based scenario for teaching the management of health information systems.</a>
 HEC2016 München. Stud Health Technol Inform. 2016;228:359-63.
 
 **Tahar K, Schaaf M, Jahn F, Kücherer C, Paech B, Herre H, Winter A.**
-<a href="public/An Approach to Support Collaborative Ontology Construction.pdf>An approach to support collaborative ontology construction.</a>
+<a href="public/An Approach to Support Collaborative Ontology Construction.pdf">An approach to support collaborative ontology construction.</a>
 HEC2016 München. Stud Health Technol Inform. 2016;228:369-73.
 
 **Schaaf M, Jahn F, Tahar K, Kücherer C, Winter A, Paech B.**
-<a href="public/Visualization of Large Ontologies in University Education from a Tool Point of View.pdf>The visualization of large ontologies from a tool point of view.</a>
+<a href="public/Visualization of Large Ontologies in University Education from a Tool Point of View.pdf">The visualization of large ontologies from a tool point of view.</a>
 HEC2016 München. Stud Health Technol Inform. 2016;228:349-53.
 
 ## 2015
 **Kücherer C, Jung M, Jahn F, Schaaf M, Tahar K, Paech B, Winter A.**
-<a href="public/System Analysis of Information Management.pdf>System Analysis of Information Management.</a>
+<a href="public/System Analysis of Information Management.pdf">System Analysis of Information Management.</a>
 In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), GI-Jahrestagung 2015: 783-796.
 
 **Schaaf M, Jahn F, Tahar K, Kücherer C, Winter A, Paech B.**
-<a href="public/Entwicklung und Einsatz einer Domaenenontologie des Informationsmanagements im Krankenhaus.pdf>Entwicklung und Einsatz einer Domänenontologie des Informationsmanagements im Krankenhaus.</a>
+<a href="public/Entwicklung und Einsatz einer Domaenenontologie des Informationsmanagements im Krankenhaus.pdf">Entwicklung und Einsatz einer Domänenontologie des Informationsmanagements im Krankenhaus.</a>
 In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), INFORMATIK 2015. GI-Jahrestagung 2015:753-765
 
 ## 2014
 **Jahn F, Schaaf M, Paech B, Winter A.**
-<a href="public/Ein semantisches Netz des Informationsmanagements im Krankenhaus.pdf>Ein semantisches Netz des Informationsmanagements im Krankenhaus.</a>
+<a href="public/Ein semantisches Netz des Informationsmanagements im Krankenhaus.pdf">Ein semantisches Netz des Informationsmanagements im Krankenhaus.</a>
 Lecture Notes in Informatics (LNI) – Proceedings, Volume P-232, 1491-1498.
 
 **Tahar K, Jahn F, Schaaf M, Kücherer C, Paech B, Winter A.**
-<a href="public/Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.pdf>Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.</a>
+<a href="public/Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.pdf">Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.</a>
 Leipzig Research Festival for Life Sciences 2014, Universität Leipzig 2014, S. 45.
 
 <!-- use css for superduper collapsibles -->
