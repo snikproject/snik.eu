@@ -52,7 +52,7 @@ HEC2016 München. Stud Health Technol Inform. 2016;228:359-63.
 HEC2016 München. Stud Health Technol Inform. 2016;228:369-73.
 
 **Schaaf M, Jahn F, Tahar K, Kücherer C, Winter A, Paech B.**
-<a href="public/Visualization of Large Ontologies in University Education from a Tool Point of View.pdf">The visualization of large ontologies from a tool point of view.</a>
+<a href="public/Visualization of Large Ontologies in University Education from a Tool Point of View.pdf">Visualization of large ontologies from a tool point of view.</a>
 HEC2016 München. Stud Health Technol Inform. 2016;228:349-53.
 
 ## 2015
@@ -70,7 +70,7 @@ In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), INFORMATIK 2015. GI
 Lecture Notes in Informatics (LNI) – Proceedings, Volume P-232, 1491-1498.
 
 **Tahar K, Jahn F, Schaaf M, Kücherer C, Paech B, Winter A.**
-<a href="public/Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.pdf">Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.</a>
+<a href="public/Eine Ontologie fuer die Unterstuetzung der Lehre und des Informationsmanagements im Gesundheitswesen.pdf">Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.</a>
 Leipzig Research Festival for Life Sciences 2014, Universität Leipzig 2014, S. 45.
 
 <!-- use css for superduper collapsibles -->
