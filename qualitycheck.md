@@ -8,75 +8,198 @@ use_sgvizler_table: true
 ---
 <div id="accordion">
 
-<h3>No Type</h3>
+<h3>Multiple Subtops</h3>
 <div>
 <h4>Situation</h4>
-Each resource should have an rdf:type.
+There are three immediate subclasses of meta:Top ("subtops"): Function, Role and Entity Type.
 <h4>Problem</h4>
-Some resources don't have a type except in some cases owl:NamedIndividual, which is not.
+As they are disjoint, any subclass of more than one of them would be empty, which we assume to be an error and thus show here.
 <h4>Solution</h4>
-The editors need to add the missing types, with the help of the domain experts if necessary.
+Automatically generate offending classes below and manually remove all but one of the subtop statements for each of them.
 <br/>
-<input type="button" id="sgvizler-button-undefinedobject" value="List Classifieds with no Catalogue" />
-<div id="sgvizler-div-undefinedobject"
+<input type="button" id="sgvizler-button-subtop-multiple" value="List Classes with Multiple Subtops" />
+<div id="sgvizler-div-subtop-multiple"
          data-sgvizler-query="
-SELECT DISTINCT(?x)
-FROM <http://hitontology.eu/ontology>
+select ?class ?type1 ?type2
+FROM <http://www.snik.eu/ontology>
 {
-  ?x ?y ?z.
-  FILTER(STRSTARTS(STR(?x),'http://hitontology.eu/ontology/'))
-
-  MINUS
-  {
-    ?x rdf:type ?type.
-    FILTER(?type!=owl:NamedIndividual)
-  }
+?class meta:subTopClass ?type1, ?type2.
+filter(?type1!=?type2)
+filter(str(?type1)<str(?type2))
 }
 ">
 </div>
 </div>
 
-<h3>Classified with no Catalogue</h3>
+<h3>Inconsistent Subtop with Subclass</h3>
 <div>
 <h4>Situation</h4>
-Each classified should belong to a catalogue.
+In addition to direct subclass relations, we model the transitively implied subclass relation to a subtop using the meta:subtop relation.
+Other knowledge bases may handle this differently, for example DBpedia always explicitly defines all superclasses.
 <h4>Problem</h4>
-Some classifieds don't belong to any catalogue.
+If A is subclass of B and A and B have different disjoint superclasses C and D, this implies that A is empty, similar to the multiple subtops problem.
 <h4>Solution</h4>
-The extractors need to add a catalogue for each such classified in the list.
+Manually unify the subtops of the subclass-superclass pairs below.
 <br/>
-<input type="button" id="sgvizler-button-undefinedobject" value="List Classifieds with no Catalogue" />
-<div id="sgvizler-div-undefinedobject"
+<input type="button" id="sgvizler-button-subtop-subclass" value="List Classes with Subtop Inconsistent with that of its Subclass" />
+<div id="sgvizler-div-subtop-subclass"
          data-sgvizler-query="
-SELECT DISTINCT ?classified
-FROM <http://hitontology.eu/ontology>
+select ?sub ?subtype ?super ?supertype
+FROM <http://www.snik.eu/ontology>
 {
- ?classified a [rdfs:subClassOf hito:Classified].
- MINUS {?classified ?p [a [rdfs:subClassOf hito:Catalogue]].}
+ owl:Class ^a ?sub,?super.
+ ?sub rdfs:subClassOf ?super.
+ ?sub meta:subTopClass ?subtype.
+ ?super meta:subTopClass ?supertype.
+ filter(?subtype!=?supertype)
 }
 ">
 </div>
 </div>
 
-<h3>Software Product with no Function</h3>
+<h3>subClassOf and component</h3>
 <div>
 <h4>Situation</h4>
-Each software product should have at least one function.
+In addition to the subclass relation, we also have the similar but different component relations.
 <h4>Problem</h4>
-Some software products may not have any functions.
+If A is subclass of B and A is also a component of B (or vice versa in the other direction), this seems syntactically wrong.
 <h4>Solution</h4>
-The editors need to research and add features to the software products listed below.
+Manually decide for one of the relations. If a component relation is chosen and the supercount is only 1, a new superclass needs to be specified.
 <br/>
-<input type="button" id="sgvizler-button-undefinedobject" value="List Software Products with no Function" />
-<div id="sgvizler-div-undefinedobject"
+<input type="button" id="sgvizler-button-subclassof-component" value="List Class pairs connected via both superclass and component relations" />
+<div id="sgvizler-div-subclassof-component"
          data-sgvizler-query="
-SELECT DISTINCT ?targetNode                                                                                                                                                                                                                                                                                                   
-FROM <http://hitontology.eu/ontology>
+select ?sub ?super COUNT(DISTINCT(?duper)) as ?supercount
+FROM <http://www.snik.eu/ontology>
 {
- ?targetNode a hito:SoftwareProduct.
- MINUS {?resource hito:enterpriseFunction ?citation.}
+ owl:Class ^a ?sub,?super.
+ ?sub rdfs:subClassOf ?super.
+ ?sub rdfs:subClassOf ?duper.
+ ?sub meta:roleComponent|meta:functionComponent|meta:entityTypeComponent|^meta:roleComponent|^meta:functionComponent|^meta:entityTypeComponent ?super.
 }
+">
+</div>
+</div>
 
+
+<h3>redundant superclass</h3>
+<div>
+<h4>Situation</h4>
+The subClassOf relation is transitive.
+<h4>Problem</h4>
+If A is subClassOf B and B is subClassOf C then any explicit triple of A subClassOf C is redundant.
+<h4>Solution</h4>
+Delete the explicit triple A subClassOf C.
+<br/>
+<input type="button" id="sgvizler-button-redundant-superclass" value="List redundant subClassOf statements" />
+<div id="sgvizler-div-redundant-superclass"
+         data-sgvizler-query="
+SELECT DISTINCT ?A ?B ?C
+FROM <http://www.snik.eu/ontology>
+{
+ owl:Class ^a ?A,?B,?C.
+ FILTER(?A!=?B&&?B!=?C&&?A!=?C)
+ ?A rdfs:subClassOf+ ?B.
+ ?B rdfs:subClassOf ?C.
+ ?A rdfs:subClassOf ?C.
+}
+">
+</div>
+</div>
+
+<h3>SKOS Link to Different Subtop</h3>
+<div>
+<h4>Situation</h4>
+The different SNIK subontologies are linked mostly using <a href=":closeMatch">skos:closeMatch</a>, <a href=":narrowMatch">skos:narrowMatch</a> and <a href=":broadMatch">skos:broadMatch</a>, which which imply owl:equivalentClass, rdfs:subClassOf and the inverse of rdfs:subClassOf.
+<h4>Problem</h4>
+For the same reasons mentioned for multiple subtops and inconsistent subtop, we assume an error if the ends of a link have a different subtop.
+<h4>Solution</h4>
+Remove all interlinks between classes with different subtops.
+<br/>
+<input type="button" id="sgvizler-button-subtop-skos" value="List Classes with Multiple Subtops" />
+<div id="sgvizler-div-subtop-skos"
+         data-sgvizler-query="
+select ?class1 ?type1 ?relation ?class2 ?type2
+FROM <http://www.snik.eu/ontology>
+{
+ owl:Class ^a ?class1,?class2.
+ ?class1 meta:subTopClass ?type1.
+ ?class2 meta:subTopClass ?type2.
+ filter(?type1!=?type2)
+ ?class1 ?relation ?class2.
+ filter(regex(str(?relation),'http://www.w3.org/2004/02/skos/core#'))
+}
+">
+</div>
+</div>
+
+<h3>Subclass Cycles</h3>
+<div>
+<h4>Situation</h4>
+Classes are sets of individuals and can be subclasses (subsets) of other classes.
+<h4>Problem</h4>
+Subclass cycles (A subclass of B ... subclass of A) collapse all members of the cycle to the same set, which is assumed to be unintentional.
+<h4>Solution</h4>
+Find subclass cycles below and and manually remove at least one of them.
+Because of the limitiations of SPARQL 1.1 property paths, we cannot select the full cycle but only give all pairs of classes on a cycle.
+<br/>
+<input type="button" id="sgvizler-button-cycle" value="List Classes on Subclass Cycles" />
+<div id="sgvizler-div-cycle"
+         data-sgvizler-query="
+select distinct ?class ?class2
+FROM <http://www.snik.eu/ontology>
+{
+ owl:Class ^a ?class,?class2.
+ ?class rdfs:subClassOf+ ?class2.
+ ?class2 rdfs:subClassOf+ ?class.
+}
+">
+</div>
+</div>
+
+<h3>Missing label</h3>
+<div>
+<h4>Situation</h4>
+All classes should have a label.
+<h4>Problem</h4>
+Some classes don't have a specified label.
+<h4>Solution</h4>
+Show classes with missing label and manually add labels.
+<br/>
+<input type="button" id="sgvizler-button-missinglabel" value="List Classes with Missing Label" />
+<div id="sgvizler-div-missinglabel"
+         data-sgvizler-query="
+select ?class
+FROM <http://www.snik.eu/ontology>
+{
+?class a owl:Class.
+MINUS {?class rdfs:label []}
+}
+">
+</div>
+</div>
+
+<h3>Missing superclass</h3>
+<div>
+<h4>Situation</h4>
+For easier exploration, visualization and understanding, we want to group all our classes in a more or less balanced tree based on the subclass/superclass relation.
+<h4>Problem</h4>
+Some classes don't have a specified superclass and thus are not connected to the rest of the hierarchy.
+<h4>Solution</h4>
+Because nearly all have a subtop statement, we use this automatically to add a superclass statement to the graph <code>http://www.snik.eu/ontology/virtual</code> for classes that don't have one already.
+As this creates a very unbalanced tree, you can display those classes below and try to find a more specific superclass for them.
+<br/>
+<input type="button" id="sgvizler-button-missingsuperclass" value="List Classes with Missing Superclass" />
+<div id="sgvizler-div-missingsuperclass"
+         data-sgvizler-query="
+select ?class ?subtop
+FROM <http://www.snik.eu/ontology>
+{
+?class a owl:Class.
+filter not exists {?class rdfs:subClassOf [].}
+OPTIONAL{?class meta:subTopClass ?subtopp.}
+bind(if(bound(?subtopp),?subtopp,'none') as ?subtop)
+}
 ">
 </div>
 </div>
@@ -90,15 +213,15 @@ Sometimes concepts occur as only as an object but not as a subject.
 <h4>Solution</h4>
 The responsible extractors for the respective subontologies need to add statements for the objects listed below.
 <br/>
-<input type="button" id="sgvizler-button-undefinedobject" value="List Software Products with Undefined Restriction Object" />
+<input type="button" id="sgvizler-button-undefinedobject" value="List Classes with Undefined Restriction Object" />
 <div id="sgvizler-div-undefinedobject"
          data-sgvizler-query="
 select distinct ?targetNode
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
  ?resource      a owl:Class.
  filter not exists { ?targetNode    a owl:Class.}
- filter(regex(str(?targetNode),'http://hitontology.eu/ontology/'))
+ filter(regex(str(?targetNode),'http://www.snik.eu/ontology/'))
  {
   ?resource     rdfs:subClassOf ?restriction.
   ?restriction  a owl:Restriction;
@@ -119,7 +242,7 @@ FROM <http://hitontology.eu/ontology>
 <h3>Domain Violation</h3>
 <div>
 <h4>Situation</h4>
-Each HITO property has a domain that defines allowed subjects.
+Each SNIK property has a domain that defines allowed subjects.
 <h4>Problem</h4>
 Some classes are used as a subject for a triple without being a direct or transitive subclass of the defined domain of the property.
 <h4>Solution</h4>
@@ -128,13 +251,14 @@ The offending triples should be removed or remodelled to conform to the domain.
 <input type="button" id="sgvizler-button-domain" value="List Domain Violations" />
 <div id="sgvizler-div-domain"
          data-sgvizler-query="
-SELECT *
-FROM <http://hitontology.eu/ontology>
+select *
+FROM <http://www.snik.eu/ontology>
 {
  ?p rdfs:domain ?domain.
+ filter(?domain!=meta:Top) 
  ?s ?p ?o.                                                                                                                                                                                                         
- MINUS {?s a/rdfs:subClassOf* ?domain.}
-} ORDER BY ?p ?s
+ minus {?s a|rdfs:subClassOf*|meta:subTopClass ?domain.}
+} order by ?p ?s
 ">
 </div>
 </div>
@@ -142,7 +266,7 @@ FROM <http://hitontology.eu/ontology>
 <h3>Range Violation</h3>
 <div>
 <h4>Situation</h4>
-Each HITO property has a range that defines allowed objects.
+Each SNIK property has a range that defines allowed objects.
 <h4>Problem</h4>
 Some classes are used as an object for a triple  without being a direct or transitive subclass of the defined range of the property.
 <h4>Solution</h4>
@@ -152,7 +276,7 @@ The offending triples should be removed or remodelled to conform to the range.
 <div id="sgvizler-div-range"
          data-sgvizler-query="
 select *
-FROM <http://hitontology.eu/ontology>                                                                                                                                                                                 
+FROM <http://www.snik.eu/ontology>                                                                                                                                                                                 
 {
  ?p rdfs:range ?range.
  filter(!strstarts(str(?range),'http://www.w3.org/2001/XMLSchema#'))
@@ -162,31 +286,6 @@ FROM <http://hitontology.eu/ontology>
 ">
 </div>
 </div>
-
-<h3>Subclass Cycles</h3>
-<div>
-<h4>Situation</h4>
-Classes are sets of individuals and can be subclasses (subsets) of other classes.
-<h4>Problem</h4>
-Subclass cycles (A subclass of B ... subclass of A) collapse all members of the cycle to the same set, which is assumed to be unintentional.
-<h4>Solution</h4>
-Find subclass cycles below and and manually remove at least one of them.
-Because of the limitiations of SPARQL 1.1 property paths, we cannot select the full cycle but only give all pairs of classes on a cycle.
-<br/>
-<input type="button" id="sgvizler-button-cycle" value="List Software Products on Subclass Cycles" />
-<div id="sgvizler-div-cycle"
-         data-sgvizler-query="
-select distinct ?class ?class2
-FROM <http://hitontology.eu/ontology>
-{
- owl:Class ^a ?class,?class2.
- ?class rdfs:subClassOf+ ?class2.
- ?class2 rdfs:subClassOf+ ?class.
-}
-">
-</div>
-</div>
-
 
 <h3>Class URL Naming Convention Violations</h3>
 <div>
@@ -201,7 +300,7 @@ Manually correct offending class URLs.
 <div id="sgvizler-div-naming"
          data-sgvizler-query="
 select ?class
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
  ?class a owl:Class.
  filter(!regex(str(?class),'([A-Z0-9][a-z0-9]+)+'))
@@ -223,7 +322,7 @@ Manually correct offending property URLs.
 <div id="sgvizler-div-naming"
          data-sgvizler-query="
 select ?property
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
  {?property a owl:ObjectProperty.} UNION {?property a owl:DatatypeProperty.}
  filter(!regex(str(?property),'^[a-z]+([A-Z][a-z0-9]+)*'))
@@ -231,29 +330,9 @@ FROM <http://hitontology.eu/ontology>
 ">
 </div>
 </div>
-<!--
-<h3>Isolated Individuals</h3>
-<div>
-<h4>Situation</h4>
-Every individual in HITO should be connected to at least one other individual.
-<h4>Problem</h4>
-Some don't.
-<h4>Solution</h4>
-Find unconnected ones.
-<br/>
-<input type="button" id="sgvizler-button-definition" value="List Software Products with Missing Definition" />
-<div id="sgvizler-div-definition"
-         data-sgvizler-query="
-select ?class
-FROM <http://hitontology.eu/ontology>
-{
- ...
-}
-">
-</div>
-</div>
--->
-<!--
+
+<!-- ** workaround for Atom editor syntax highlighting problem -->
+
 <h3>Missing Definition</h3>
 <div>
 <h4>Situation</h4>
@@ -263,11 +342,11 @@ Some don't.
 <h4>Solution</h4>
 Try to find a definition in the source.
 <br/>
-<input type="button" id="sgvizler-button-definition" value="List Software Products with Missing Definition" />
+<input type="button" id="sgvizler-button-definition" value="List Classes with Missing Definition" />
 <div id="sgvizler-div-definition"
          data-sgvizler-query="
 select ?class
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
  ?class a owl:Class.
  OPTIONAL {?class skos:definition ?def.}
@@ -291,7 +370,7 @@ Generate all literals containing semicolons except those from definitions of mor
 <div id="sgvizler-div-semicolon"
          data-sgvizler-query="
 select ?class ?property ?literal
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
 
  ?class ?property ?literal.
@@ -301,8 +380,46 @@ FROM <http://hitontology.eu/ontology>
 ">
 </div>
 </div>
--->
-<!--
+<h3>Classes with too many subclasses</h3>
+<div>
+<h4>Situation</h4>
+The subclass hierarchy should ideally be a more or less balanced tree.
+<h4>Problem</h4>
+In practice, the hierarchy is too flat.
+<h4>Solution</h4>
+List all classes with more than 20 subclasses.
+<br/>
+<input type="button" id="sgvizler-button-imbalanced-count" value="List Classes with too many subclasses" />
+<div id="sgvizler-div-imbalanced-count"
+         data-sgvizler-query="
+select ?super count(?sub) as ?sub_count
+FROM <http://www.snik.eu/ontology>
+{
+ owl:Class ^a ?sub,?super.
+ ?sub rdfs:subClassOf ?super.
+} group by ?super having (count(?sub) > 20) order by desc(count(?sub))
+">
+</div>
+
+<input type="button" id="sgvizler-button-imbalanced-subclasses" value="List Subclasses of Classes with too many Subclasses" />
+<div id="sgvizler-div-imbalanced-subclasses"
+         data-sgvizler-query="
+select ?sub
+FROM <http://www.snik.eu/ontology>
+{
+ ?sub rdfs:subClassOf ?super
+{
+ select ?super
+{
+ owl:Class ^a ?sub,?super.
+ ?sub rdfs:subClassOf ?super.
+} group by ?super having (count(?sub) > 20)
+}
+}
+">
+</div>
+</div>
+
 <h3>No Restriction</h3>
 <div>
 <h4>Situation</h4>
@@ -319,7 +436,7 @@ They are not necessarily faulty but it may be worthy to investigate if they can 
 <div id="sgvizler-div-isolated"
          data-sgvizler-query="
 select ?class
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
  ?class a owl:Class.
  filter not exists
@@ -332,7 +449,6 @@ FROM <http://hitontology.eu/ontology>
 ">
 </div>
 </div>
--->
 
 <h3>Non-HTTP URI</h3>
 <div>
@@ -347,7 +463,7 @@ List all triples with URIs that are neither HTTP URIs nor blanknodes.
 <div id="sgvizler-div-non-http"
          data-sgvizler-query="
 select ?x
-FROM <http://hitontology.eu/ontology>
+FROM <http://www.snik.eu/ontology>
 {
 {?x ?p ?o.} UNION {?s ?x ?o}. filter(!regex(str(?x),'http://')&&!regex(str(?x),'nodeID')).
 }
@@ -369,7 +485,7 @@ Exclude those defined in vocabularies like RDF, RDFS, OWL and so on.
 <input type="button" id="sgvizler-button-undefined-property" value="Undefined Properties" />
 <div id="sgvizler-div-undefined-property"
          data-sgvizler-query="
-select distinct(?p) from <http://hitontology.eu/ontology>
+select distinct(?p) from <http://www.snik.eu/ontology>
 {
  ?x ?p ?y.
  filter(!(strstarts(str(?p),'http://www.w3.org/1999/02/22-rdf-syntax-ns#')))
@@ -403,11 +519,38 @@ List all URIs that are defined as more than one of owl:ObjectProperty, owl:Datat
 <input type="button" id="sgvizler-button-multi-property" value="Multiply Defined Properties" />
 <div id="sgvizler-div-multi-property"
          data-sgvizler-query="
-select distinct(?x) from <http://hitontology.eu/ontology>
+select distinct(?x) from <http://www.snik.eu/ontology>
 {
  {?x a owl:DatatypeProperty,owl:ObjectProperty.} UNION
  {?x a owl:ObjectProperty,owl:AnnotationProperty.} UNION
  {?x a owl:AnnotationProperty,owl:DatatypeProperty.}
+}
+">
+</div>
+</div>
+
+<h3>OWL 2 DL: Class Typing Constraints</h3>
+<div>
+<h4>Situation</h4>
+Some URIs may be used in axioms without being defined as an owl:Class.
+<h4>Problem</h4>
+This violates the <a href="https://www.w3.org/TR/owl2-syntax/#Typing_Constraints_of_OWL_2_DL">typing constraints of OWL 2 DL</a>.
+<h4>Solution</h4>
+List all URIs that occur in axioms but that aren't defined as an owl:Class.
+<br/>
+<input type="button" id="sgvizler-button-class-typing" value="Class Typing Violations" />
+<div id="sgvizler-div-class-typing"
+         data-sgvizler-query="
+select distinct(?cl)
+{
+ ?ax a owl:Axiom.
+ ?ax ?p ?cl.
+ filter(isIRI(?cl)).
+ filter(strStarts(str(?cl),'http://www.snik.eu/ontology/')).
+ MINUS
+ {
+  ?cl a owl:Class.
+ }
 }
 ">
 </div>
