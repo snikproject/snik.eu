@@ -6,6 +6,11 @@ order: 35
 
 Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei für LaTeX herunterladen</a>.
 
+## 2022 
+**Höffner K, Roszeitis A, Wächtler MW, Jahn F, Winter A**
+<a href="public/snik-quiz-mie2022.pdf">SNIK Quiz: A Multiple Choice Game about Information Management in Hospitals</a>
+EFMI MIE 2022, Nice, 2022. Preprint.
+
 ## 2019
 
 **Jahn F, Kücherer C, Liebe J-D, Paech B, Winter A**
