@@ -4,8 +4,23 @@ title: Abschlussarbeiten
 order: 36
 ---
 
+## In Bearbeitung
+**User-Experience-Optimierung der Navigation in einer Wissensbasis für medizinische Anwendungssysteme und Softwareprodukte**<br>
+Bearbeitet von: <a href="https://github.com/asomesan">Andreea Somesan</a><br>
+Betreut von: Konrad Höffner
+
+## 2022
+**<a href="public/bachelor-ar.pdf">Automatische Generierung komplexer Fragen zum Informationsmanagement auf der Basis der SNIK-Ontologie</a>**<br>
+Bearbeitet von: <a href="https://github.com/acklay4">Arne Roszeitis</a><br>
+Betreut von: Konrad Höffner
+
+## 2021
+**<a href="public/bell-mw.pdf">Automatische Erstellung von Quizfragen aus einer Ontologie von Krankenhausinformationssystemen</a>**<br>
+Bearbeitet von: <a href="https://github.com/cubexy">Max Niclas Wächtler</a><br>
+Betreut von: Konrad Höffner
+
 ## 2020
-**<a href="public/Bachelorarbeit_Thomas_Pause.pdf">Organisation von Teilgraphen semantischer Netze zur ontologiegestützten Wissensvermittlung</a>**<br>
+**<a href="public/bachelor-tp.pdf">Organisation von Teilgraphen semantischer Netze zur ontologiegestützten Wissensvermittlung</a>**<br>
 Bearbeitet von: <a href="https://github.com/ThomasPause">Thomas Pause</a><br>
 Betreut von: Konrad Höffner
 
@@ -14,6 +29,7 @@ Betreut von: Konrad Höffner
 **Integration von ITIL-Begriffen in die SNIK-Ontologie**<br>
 Bearbeitet von: Benjamin Rösch<br>
 Betreut von: Franziska Jahn
+<!-- PDF wird nicht veröffentlicht, da kein Einverständnis vorliegt und da es ITIL behandelt, was nicht veröffentlicht werden darf. -->
 
 ## 2017
 
