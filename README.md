@@ -2,6 +2,9 @@
 
 # SNIK Website
 
+[![deploy](https://github.com/snikproject/snik.eu/actions/workflows/deploy.yml/badge.svg)](https://github.com/snikproject/snik.eu/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Live on <https://www.snik.eu>.
 This is the website for SNIK, the Semantic Network of Information Management in Hospitals.
 It is a copy of the [HITO website](https://github.com/hitontology/hitontology.eu), which is a fork of the [Hyde layout](https://github.com/poole/hyde), which itself is based on Jekyll, a static site generator.
