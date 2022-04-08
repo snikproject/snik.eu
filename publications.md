@@ -3,15 +3,20 @@ layout: page
 title: Publikationen
 order: 35
 ---
+<!-- use css for superduper collapsibles -->
+<link rel="stylesheet" href="public/css/collapse.css">
 
 Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei für LaTeX herunterladen</a>.
 
-## 2022 
+## Paper
+
+### 2022 
+
 **Höffner K, Roszeitis A, Wächtler MW, Jahn F, Winter A**
 <a href="public/snik-quiz-mie2022.pdf">SNIK Quiz: A Multiple Choice Game about Information Management in Hospitals</a>
 EFMI MIE 2022, Nice, 2022. Preprint.
 
-## 2019
+### 2019
 
 **Jahn F, Kücherer C, Liebe J-D, Paech B, Winter A**
 <a href="public/Charakteristika von IT-Abteilungen in Krankenhaeusern in Deutschland.pdf">Charakteristika von IT-Abteilungen in Krankenhäusern in Deutschland.</a>
@@ -26,7 +31,7 @@ Best poster award.
 <a href="public/Open and Linkable Knowledge About Management of Health Information Systems.pdf">Open and Linkable Knowledge about Management of Health Information Systems.</a>
 MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019, Poster.
 
-## 2017
+### 2017
 **Höffner K, Jahn F, Kücherer C, Paech B, Schneider B, Schöbel M, Stäubert S, Winter A**
 <a href="public/Technical Environment for Developing the SNIK Ontology of Information Management in Hospitals.pdf">Technical Environment for Developing the SNIK Ontology of Information Management in Hospitals.</a>
 Stud Health Technol Inform. 2017;243:122-126.
@@ -43,7 +48,7 @@ Stud Health Technol Inform. 2017;243:122-126.
 <a href="public/Zwischen Schattendasein Governance und Entrepreneurship.pdf">Zwischen Schattendasein, Governance und Entrepreneurship – Eine empirische Bestandsaufnahme zum Professionalisierungsgrad des IT-Managements in deutschen Krankenhäusern.</a>
 13th International Conference on Wirtschaftsinformatik (WI 2017), St. Gallen (Switzerland), February 12-15, 2017, accepted to appear
 
-## 2016
+### 2016
 **Kücherer C, Liebe J D, Schaaf M, Thye J, Paech B, Winter A and Jahn F.**
 <a href="public/The Status Quo of Information Management in Hospitals.pdf">The Status Quo of Information Management in Hospitals - Results of an Online Survey.</a>
 In: H.C. Mayr, M. Pinzger (Hrsg.), INFORMATIK 2016, Lecture Notes in Informatics (LNI), Gesellschaft für Informatik, Bonn 2016.
@@ -60,7 +65,7 @@ HEC2016 München. Stud Health Technol Inform. 2016;228:369-73.
 <a href="public/Visualization of Large Ontologies in University Education from a Tool Point of View.pdf">Visualization of large ontologies from a tool point of view.</a>
 HEC2016 München. Stud Health Technol Inform. 2016;228:349-53.
 
-## 2015
+### 2015
 **Kücherer C, Jung M, Jahn F, Schaaf M, Tahar K, Paech B, Winter A.**
 <a href="public/System Analysis of Information Management.pdf">System Analysis of Information Management.</a>
 In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), GI-Jahrestagung 2015: 783-796.
@@ -69,7 +74,7 @@ In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), GI-Jahrestagung 201
 <a href="public/Entwicklung und Einsatz einer Domaenenontologie des Informationsmanagements im Krankenhaus.pdf">Entwicklung und Einsatz einer Domänenontologie des Informationsmanagements im Krankenhaus.</a>
 In D. Cunningham, P. Hofstedt, K. Meer, & I. Schmitt (Eds.), INFORMATIK 2015. GI-Jahrestagung 2015:753-765
 
-## 2014
+### 2014
 **Jahn F, Schaaf M, Paech B, Winter A.**
 <a href="public/Ein semantisches Netz des Informationsmanagements im Krankenhaus.pdf">Ein semantisches Netz des Informationsmanagements im Krankenhaus.</a>
 Lecture Notes in Informatics (LNI) – Proceedings, Volume P-232, 1491-1498.
@@ -77,3 +82,92 @@ Lecture Notes in Informatics (LNI) – Proceedings, Volume P-232, 1491-1498.
 **Tahar K, Jahn F, Schaaf M, Kücherer C, Paech B, Winter A.**
 <a href="public/Eine Ontologie fuer die Unterstuetzung der Lehre und des Informationsmanagements im Gesundheitswesen.pdf">Eine Ontologie für die Unterstützung der Lehre und des Informationsmanagements im Gesundheitswesen.</a>
 Leipzig Research Festival for Life Sciences 2014, Universität Leipzig 2014, S. 45.
+
+## Poster
+
+<figure>
+<center>
+<a href="public/poster/snik-graph-poster-medinfo2019.pdf">
+<img src="public/poster/snik-graph-poster-medinfo2019-400.png" alt="The SNIK Graph: Visualization of a Medical Informatics Ontology"/>
+</a>
+</center>
+<figcaption>
+The SNIK Graph: Visualization of a Medical Informatics Ontology.<br>
+Franziska Jahn, Konrad Höffner, Birgit Schneider, Anna Lörke, Thomas Pause, Elske Ammenwerth, Alfred Winter, Elske Ammenwerth.
+Medinfo 2019, Lyon.
+</figcaption>
+</figure>
+
+<div class="wrap-collapsible">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">Open BibTeX</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>
+        @inproceedings{snikgraphposter, <br>
+          author={Franziska Jahn and Konrad Höffner and Birgit Schneider and Anna Lörke and Thomas Pause and Elske Ammenwerth and Alfred Winter},<br>
+          booktitle={MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon},<br>
+          title={The {SNIK} {G}raph: {V}isualization of a Medical Informatics Ontology},<br>
+          year={2019}<br>
+        }
+      </p>
+    </div>
+  </div>
+</div>
+
+<figure>
+<center>
+<a href="public/poster/snik-poster-medinfo2019.pdf">
+<img src="public/poster/snik-poster-medinfo2019-400.jpg" alt="Open and Linkable Knowledge about Management of Health Information Systems"/>
+</a>
+</center>
+<figcaption>
+Open and Linkable Knowledge about Management of Health Information Systems.<br>
+Konrad Höffner, Franziska Jahn, Anna Lörke, Thomas Pause, Birgit Schneider, Elske Ammenwerth, Alfred Winter.
+MedInfo 2019, Lyon.
+</figcaption>
+</figure>
+
+<div class="wrap-collapsible">
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">Open BibTeX</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>
+    @inproceedings{snikposter,<br>
+      title={Open and Linkable Knowledge About Management of Health Information Systems},<br>
+      author={H{\"o}ffner, Konrad and Jahn, Franziska and L{\"o}rke, Anna and Pause, Thomas and Schneider, Birgit and Ammenwerth, Elske and Winter, Alfred},<br>
+      booktitle={MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon},<br>
+      year={2019}<br>
+    }
+</p>
+    </div>
+  </div>
+</div>
+
+<figure>
+<center>
+<a href="public/poster/snik-complete-graph-poster.pdf">
+<img src="public/poster/snik-complete-graph-poster-400.png" alt="SNIK Graph"/>
+</a>
+</center>
+<figcaption>
+SNIK Graph. Konrad Höffner, 2020.
+</figcaption>
+</figure>
+
+<!-- Script for superduper collapsibles -->
+<script>
+let myLabels = document.querySelectorAll('.lbl-toggle');
+
+Array.from(myLabels).forEach(label => {
+  label.addEventListener('keydown', e => {
+    // 32 === spacebar
+    // 13 === enter
+    if (e.which === 32 || e.which === 13) {
+      e.preventDefault();
+      label.click();
+    };
+  });
+});
+</script>
