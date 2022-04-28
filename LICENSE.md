@@ -1,5 +1,3 @@
-# Released under MIT License
-
 Copyright (c) 2013 Mark Otto.
 Copyright (c) 2019 Konrad Höffner
 Copyright (c) 2021 Michelle Bindel
