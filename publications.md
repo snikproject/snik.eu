@@ -14,7 +14,7 @@ Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei f�
 
 **Höffner K, Roszeitis A, Wächtler MW, Jahn F, Winter A**
 <a href="public/snik-quiz-mie2022.pdf">SNIK Quiz: A Multiple Choice Game about Information Management in Hospitals</a>
-EFMI MIE 2022, Nice, 2022. Preprint.
+<a href="https://pubmed.ncbi.nlm.nih.gov/35612205/">Studies in health technology and informatics. 294:790-795; 2022.</a>
 
 ### 2019
 
