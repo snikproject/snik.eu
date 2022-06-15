@@ -5,8 +5,9 @@ order: 36
 ---
 
 ## In Bearbeitung
-**User-Experience-Optimierung der Navigation in einer Wissensbasis für medizinische Anwendungssysteme und Softwareprodukte**<br>
-Bearbeitet von: <a href="https://github.com/asomesan">Andreea Somesan</a><br>
+
+**Question Answering auf SNIK (Besondere Lernleistung, Arbeitstitel)**<br>
+Bearbeitet von: <a href="https://github.com/Yagnap">Hannes Raphael Brunsch</a><br>
 Betreut von: Konrad Höffner
 
 ## 2022
