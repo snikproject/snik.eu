@@ -55,4 +55,3 @@ Eine Auswahl unserer Visualisierungen, Schnittstellen und Werkzeuge:
   The SNIK Meta Model
 </center>
 ---
-<!--<center><img src="public/hito-graph.png">The HITO-Graph</center>-->

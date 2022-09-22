@@ -12,17 +12,6 @@
   grid-gap:1em;
 }
 
-#hito-logo {
-  /*
-  background-image:url("../logo-snik-alpha.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  */
-  width:45px;
-  height:40px;
-}
-
 .flex-item {
   width: 15rem;
   height: 15rem;
