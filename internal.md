@@ -11,8 +11,6 @@ order: 37
 
 * <a href="{{ site.internal.owncloud }}" target="_blank">OwnCloud</a>
 
-* <a href="{{ site.internal.qualitycheck }}" target="_blank"> Quality Check</a>
-
-* <a href="{{ site.internal.slack }}" target="_blank">Slack Workspace</a>
+* <a href="{{ site.internal.qualitycheck }}"> Quality Check</a>
 
 * <a href="{{ site.internal.conductor }}" target="_blank">Conductor</a>

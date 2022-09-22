@@ -21,7 +21,6 @@ github:
 
 internal:
   owncloud:  https://denethor.imise.uni-leipzig.de/index.php/apps/files?dir=/Shared/SNIK/
-  slack:     https://hito-project.slack.com/
   googledrive: https://drive.google.com/drive/folders/1vvBFwDhE9S1Mm3i317KjubNdLsW1iCJU
   qualitycheck: qualitycheck
   conductor: https://www.snik.eu/conductor
