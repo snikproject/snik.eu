@@ -9,12 +9,10 @@ description:      'A Semantic Network of Information Management in Hospitals'
 url:              https://www.snik.eu
 logo:
 
+# About and contact
 author:
   name:           'Konrad Höffner'
   url:            https://github.com/KonradHoeffner
-
-# Custom vars
-version:          0.0.1
 
 github:
   org:           https://github.com/snikproject
