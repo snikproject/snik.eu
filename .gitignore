@@ -44,3 +44,10 @@ node_modules
 # Jekyll
 .jekyll-metadata
 .jekyll-cache/
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls

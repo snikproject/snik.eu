@@ -4,14 +4,12 @@ title: Abschlussarbeiten
 order: 36
 ---
 
-## In Bearbeitung
-
-**Question Answering auf SNIK (Arbeitstitel)**<br>
+## 2022
+**<a href="public/bell-hrb.pdf">Question Answering auf SNIK</a>**<br>
 **Besondere Lernleistung**<br>
 Bearbeitet von: <a href="https://github.com/Yagnap">Hannes Raphael Brunsch</a><br>
 Betreut von: Konrad Höffner
 
-## 2022
 **<a href="public/bachelor-ar.pdf">Automatische Generierung komplexer Fragen zum Informationsmanagement auf der Basis der SNIK-Ontologie</a>**<br>
 **Bachelorarbeit**<br>
 Bearbeitet von: <a href="https://github.com/acklay4">Arne Roszeitis</a><br>
