@@ -6,7 +6,7 @@ order: 35
 <!-- use css for superduper collapsibles -->
 <link rel="stylesheet" href="public/css/collapse.css">
 
-Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei für LaTeX herunterladen</a>.
+Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei für LaTeX</a> oder <a href="public/snik.pdf">als PDF</a> herunterladen.
 
 ## Paper
 
