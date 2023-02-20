@@ -37,17 +37,26 @@ Eine Auswahl unserer Visualisierungen, Schnittstellen und Werkzeuge:
 </div>
 
 <div class="flex-item">
-<a title="Download" href="https://github.com/snikproject/ontology/archive/refs/heads/master.zip">RDF Dump<br>
-<img title="Download" alt="Download" src="public/download.png">
-</a>
+  <a title="Question Answering" href="https://app.qanswer.ai/public-share?kb=SNIK_BB&type=graph&user=kirdie&lang=en">Question Answering<br>
+    <img title="Question Answering" alt="Question Answering" src="public/browse.png">
+  </a>
 </div>
+
+<div class="flex-item">
+  <a title="Download" href="https://github.com/snikproject/ontology/archive/refs/heads/master.zip">RDF Dump<br>
+    <img title="Download" alt="Download" src="public/download.png">
+  </a>
+</div>
+
 </div>
 <br>
 
 ---
+
 ## Metamodell
 
 ---
+
 <center>
   <a href="public/SNIK_Metamodell_V8.svg" target="_blank">
     <img src="public/SNIK_Metamodell_V8.svg">
