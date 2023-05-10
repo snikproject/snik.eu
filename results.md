@@ -11,7 +11,7 @@ Abbildung 1: Übersicht über die erzielten Projektergebnisse
 Die Strukturierung und Abbildung von Wissens in einer Ontologie, setzt ein Metamodell voraus, welches domänenunabhängige Konzepte zur Beschreibung von Wissen vorgibt.
 Im ersten Schritt wurde ein Metamodell (Abbildung 2) entwickelt , auf dessen Grundlage Wissen aus Literatur zum Informationsmanagement im Krankenhaus, strukturiert extrahiert werden kann.
 
-<img src="public/SNIK_Metamodell_V8.svg">
+<img src="public/SNIK_Metamodell_V10.svg">
 Abbildung 2: Das SNIK-Metamodell
 
 ## Die Visualisierung der Ontologie
