@@ -58,8 +58,8 @@ Eine Auswahl unserer Visualisierungen, Schnittstellen und Werkzeuge:
 ---
 
 <center>
-  <a href="public/SNIK_Metamodell_V8.svg" target="_blank">
-    <img src="public/SNIK_Metamodell_V8.svg">
+  <a href="public/SNIK_Metamodell_V10.svg" target="_blank">
+    <img src="public/SNIK_Metamodell_V10.svg">
   </a>
   The SNIK Meta Model
 </center>
