@@ -4,6 +4,12 @@ title: Abschlussarbeiten
 order: 36
 ---
 
+## 2023
+**<a href="https://nbn-resolving.org/urn:nbn:de:bsz:15-qucosa2-882749">Question Answering auf dem Lehrbuch 'Health Information Systems' mit Hilfe von unüberwachtem Training eines Pretrained Transformers</a>**<br>
+**Masterarbeit**<br>
+Bearbeitet von: <a href="https://github.com/scorixear/master-thesis">Paul Keller</a><br>
+Betreut von: Konrad Höffner
+
 ## 2022
 **<a href="public/bell-hrb.pdf">Question Answering auf SNIK</a>**<br>
 **Besondere Lernleistung**<br>
