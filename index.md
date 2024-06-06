@@ -55,8 +55,14 @@ Eine Auswahl unserer Visualisierungen, Schnittstellen und Werkzeuge:
 </div>
 
 <div class="flex-item">
-  <a title="Technical Blog" href="https://snikproject.github.io/blog/">Technical Blog and Dashboard<br>
+  <a title="Technical Blog" href="https://snikproject.github.io/blog/">Technical Blog<br>
     <img title="Technical Blog" alt="Technical Blog" src="public/browse.png">
+  </a>
+</div>
+
+<div class="flex-item">
+  <a title="Stats and Charts" href="https://snikproject.github.io/blog/2017/04/12/dashboard/">Stats and Charts<br>
+    <img title="Stats and Charts" alt="Stats and Charts" src="public/browse.png">
   </a>
 </div>
 
