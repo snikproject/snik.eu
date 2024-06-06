@@ -16,7 +16,8 @@ Abbildung 2: Das SNIK-Metamodell
 
 ## Die Visualisierung der Ontologie
 
-Derzeit beinhaltet die SNIK Ontologie mehr als 2000 Konzepte, 4500 Relationen und ca. 15000 Annotationen.
+Die SNIK Ontologie beinhaltet (Stand 2024-06-06) 6354 Klassen, 336 Relationen und 43521 Tripel.
+Aktuelle und nach Subontologien aufgeschlüsselte Zahlen finden Sie [im Dashboard](https://snikproject.github.io/blog/2017/04/12/dashboard/).
 Die ursprüngliche Abbildung unserer Ontologie erfolgte mittels eines Spreadsheet im CSV-Format.
 Insbesondere im Bereich der Lehre benötigen Studenten ein tiefes Verständnis der Struktur und des Inhalts der Ontologie.
 Dies erscheint in Bezug auf kleine Ontologien einfach, wird jedoch mit steigender Größe nahezu unmöglich.
