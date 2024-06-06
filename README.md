@@ -29,8 +29,6 @@ Use bundler with the provided Gemfile:
     $ gem install bundler
     $ bundle install
 
-However that resulted in the error `Bundler::GemNotFound: Could not find jekyll-4.2.1.gem for installation` in testing on one machine.
-
 ### Example for MacOS (with Homebrew)
 
 Install Ruby:
