@@ -48,6 +48,12 @@ Eine Auswahl unserer Visualisierungen, Schnittstellen und Werkzeuge:
   </a>
 </div>
 
+<div class="flex-item">
+  <a title="Ontology Documentation" href="https://snikproject.github.io/ontology/">Ontology Documentation<br>
+    <img title="Ontology Documentation" alt="Ontology Documentation" src="public/browse.png">
+  </a>
+</div>
+
 </div>
 <br>
 
