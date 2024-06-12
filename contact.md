@@ -76,7 +76,6 @@ Härtelstraße 16-18<br>
 * Martin Schöbel
 * Kais Tahar
 * Lydia Lotzmann
-* Iman Gharib
 * Christian Kahmann
 
  
