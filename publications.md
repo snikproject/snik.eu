@@ -10,6 +10,12 @@ Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei f�
 
 ## Paper
 
+### 2024
+
+**Höffner K, Pause T, Jahn F, Brunsch HR, Brakemeier A, Winter A**
+<a target="_blank" href="https://www.theoj.org/jose-papers/jose.00180/10.21105.jose.00180.pdf">SNIK Graph—Visualizing Knowledge about Management of Hospital Information Systems</a>
+Journal of Open Source Education, 7(77), 180, <a target="_blank" href="https://jose.theoj.org/papers/10.21105/jose.00180">https://doi.org/10.21105/jose.00180</a>
+
 ### 2022 
 
 **Höffner K, Roszeitis A, Wächtler MW, Jahn F, Winter A**
