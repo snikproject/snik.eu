@@ -31,7 +31,7 @@ Report zur Umfrage unter IT-Leitern in Krankenhäusern (Februar-April 2016).
 **Jahn F, Höffner K, Schneider B, Lörke A, Pause T, Ammenwerth E, Winter A**
 <a href="public/The SNIK Graph Visualization of a Medical Informatics Ontology.pdf">The SNIK Graph: Visualization of a Medical Informatics Ontology.</a>
 MedInfo 2019, The 17th World Congress of Medical and Health Informatics, Lyon, 2019.
-Best poster award.
+Best poster award. <a target="_blank" href="https://ebooks.iospress.nl/publication/52489">https://doi.org/10.3233/SHTI190724</a>
 
 **Höffner K, Jahn F, Lörke A, Pause T, Schneider B, Ammenwerth E, Winter A**
 <a href="public/Open and Linkable Knowledge About Management of Health Information Systems.pdf">Open and Linkable Knowledge about Management of Health Information Systems.</a>
