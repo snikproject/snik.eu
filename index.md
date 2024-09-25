@@ -43,6 +43,12 @@ Eine Auswahl unserer Visualisierungen, Schnittstellen und Werkzeuge:
 </div>
 
 <div class="flex-item">
+  <a title="Quiz" href="https://snikproject.github.io/quiz/">Quiz<br>
+    <img title="Quiz" alt="Quiz" src="public/browse.png">
+  </a>
+</div>
+
+<div class="flex-item">
   <a title="Download" href="https://github.com/snikproject/ontology/archive/refs/heads/master.zip">RDF Dump<br>
     <img title="Download" alt="Download" src="public/download.png">
   </a>
