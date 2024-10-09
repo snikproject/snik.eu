@@ -1,4 +1,4 @@
-name: Build Jekyll site and deploy static HTML to the "static" branch
+name: Build and Deploy
 
 on:
   workflow_dispatch:
