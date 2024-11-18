@@ -16,6 +16,12 @@ Alle Publikationen als <a href="public/snik.bib" target="_blank">BibTeX-Datei f�
 <a target="_blank" href="https://www.theoj.org/jose-papers/jose.00180/10.21105.jose.00180.pdf">SNIK Graph—Visualizing Knowledge about Management of Hospital Information Systems</a>
 Journal of Open Source Education, 7(77), 180, <a target="_blank" href="https://jose.theoj.org/papers/10.21105/jose.00180">https://doi.org/10.21105/jose.00180</a>
 
+### 2023
+
+**Brunsch HR**
+<a target="_blank" href="https://github.com/Yagnap/BeLL-Question-Answering-auf-Linked-Data-SNIK/blob/main/PDFs/SKILL-PAPER-Question-Answering-auf-SNIK.pdf">Question Answering auf einer Ontologie des Informationsmanagements im Krankenhaus</a>
+Studierendenkonferenz Informatik SKILL 2023. Lecture Notes in Informatics. Gesellschaft für Informatik, Bonn.
+
 ### 2022 
 
 **Höffner K, Roszeitis A, Wächtler MW, Jahn F, Winter A**
