@@ -7,6 +7,7 @@
 
 Live on <https://www.snik.eu> and <https://snikproject.github.io/snik.eu/>.
 This is the website for SNIK, the Semantic Network of Information Management in Hospitals.
+The SNIK services such as the [SPARQL endpoint](https://www.snik.eu/sparql) and the [RickView RDF Browser](https://www.snik.eu/ontology/) are deployed using the [SNIK container infrastructure](https://github.com/snikproject/docker).
 It is a copy of the [HITO website](https://github.com/hitontology/hitontology.eu), which is a fork of the [Hyde layout](https://github.com/poole/hyde), which itself is based on Jekyll, a static site generator.
 
 ## Setup
@@ -57,7 +58,7 @@ This will put the static HTML content into the `_site` folder.
 
 ## Deploy
 We serve the content of the static branch at the official SNIK website <https://snik.eu>.
-The static branch is also automatically served using GitHub pages at <https://.github.io/snik.eu/>.
+The static branch is also automatically served using GitHub pages at <https://snikproject.github.io/snik.eu/>.
 
 ## Using Docker
 If you cannot or do not want to install Ruby and the gems on your system, or there is some problem with Ruby, you can also use the Dockerfile, which should work everywhere.
@@ -90,12 +91,14 @@ In our experience, this can be fixed by deinstalling Ruby, deleting all leftover
 Docker may run in it's own virtual machine under MacOS and not thus not forward `--network="host"` to the network of the machine itself.
 While the default way of port mapping in Docker using the `-p 4000:4000` gets forwarded to the local host under MacOS, this does not work with the underlying Jekyll server of this website.
 Thus, there may not be a way to preview the docker build using `jekyll serve` on MacOS.
-However you can still build it using Docker and use a local webserver to preview the _site folder.
+However you can still build it using Docker and use a local webserver to preview the `_site` folder.
 
 ## Explanation for non-developer Windows users
+
 The SNIK website does not have a WYSIWYG editor like WordPress or Drupal, because it was originally maintained by the SNIK developers, for whom this way had many advantages, such as speed, simplicity, flexibility, stability, versioning and more.
 For example, even if the server crashes and all data and backups are lost, the newest state of the website or any earlier version can be instantly restored.
-This website is not designed to be changed by non-technical users, but if you want to make a small change after the end of the project and the developers are not reachable but you work with Windows and don't have technical knowledge and can't install the development tools (Git and either Ruby or Docker), you can follow this guide.
+This website is not designed to be changed by non-technical users.
+If you still want to make a small change after the end of the project and the developers are not reachable but you work with Windows and don't have technical knowledge and can't install the development tools (Git and either Ruby or Docker), you can follow this guide.
 
 This is the Git repository where the source code for the SNIK website is hosted.
 The website is not just static HTML, which you can put on an HTML webserver directly, but instead it is written in [Markdown](https://www.markdownguide.org/), an easy to read text format that is transformed into HTML.
