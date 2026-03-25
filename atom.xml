@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>SNIK</title>
+ <link href="https://www.snik.eu/atom.xml" rel="self"/>
+ <link href="https://www.snik.eu/"/>
+ <updated>2026-03-25T11:20:46+00:00</updated>
+ <id>https://www.snik.eu</id>
+ <author>
+   <name>Konrad Höffner</name>
+   <email></email>
+ </author>
+
+ 
+
+</feed>
